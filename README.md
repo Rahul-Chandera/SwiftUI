@@ -16,6 +16,21 @@ In "ContentView" file, you will see two struct, the first struct is where you wr
 
 
 
+
 Live preview is a greate tool. You don't have to compile and run your project everytime to verify your UI. Your code changes will imidiatly reflect into preview. You can even change size of your preview. Use "Group" if you want mutiple preview of your view with differnt data, or use "previewDevice" to specify device in which you want preview, you can have mutiple devices also.
 
 ![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/2.png)
+
+
+
+
+You can edit view component from preview also. Just hold command key and click on control which you want to edit. It will open popup on that control. You can choose "Inspect..." to change property of control, or you can directly embed it into HStack, VStack or List.
+
+![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/3.png)
+
+
+
+Use "HStack" to align your components horizontaly, or "VStack" to align your components verticaly. "List" is replacement of "UITableView" with more simple and less number of lines code.
+
+
+
