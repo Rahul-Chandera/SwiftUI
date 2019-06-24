@@ -10,7 +10,7 @@ Here we are going to exlore some functionalities of SwiftUI framework. For this 
 When you create a new project using XCode 11 and check the SwiftUI box, it comes with a "SceneDelegate" file. SceneDelegate is reposinsible for your views hirarchy, it's not part of AppDelegate any more. AppDelegate is purely for managing services like notifications, location, etc. This helps to reduce burdon from AppDelegate class. 
 
 In "ContentView" file, you will see two struct, the first struct is where you write your view code, the second struct is where you declare what you want to preview.
-![alt text](https://github.com/Rahul-Chandera/SwiftUI/img/1.png)
+![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/1.png)
 
 Live preview is a greate tool. You don't have to compile and run your project everytime to verify your UI. Your code changes will imidiatly reflect into preview. You can even change size of your preview. Use "Group" if you want mutiple preview of your view with differnt data, or use "previewDevice" to specify device in which you want preview, you can have mutiple devices also.
-![alt text](https://github.com/Rahul-Chandera/SwiftUI/img/2.png)
+![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/2.png)
