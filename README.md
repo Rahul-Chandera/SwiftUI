@@ -30,6 +30,70 @@ You can edit view component from preview also. Just hold command key and click o
 
 
 
-Use "HStack" to align your components horizontally, or "VStack" to align your components vertically. "List" is replacement of "UITableView" with more simple and less number of lines code. Navigation is also simple, you just have to use "NavigationButton" and define destination screen to navigate. If you want to set title to navigation bar, just use "navigationBarTitle" property.
+Use "HStack" to align your components horizontally, or "VStack" to align your components vertically. You can use "alignment" to align child components, or "spacing" to specify space between components.
+```
+struct InfoRow : View {
+    var body: some View {
+      VStack(alignment: .center, spacing: 12) {
+        Image("sample")
+        Text("Hello World")
+       }
+    }
+}
+```
 
-![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/4.png)
+
+"List" is replacement of "UITableView", with more simple and less number of lines code. Navigation is also simple, you just have to use "NavigationButton" and define destination screen to navigate. If you want to set title to navigation bar, just use "navigationBarTitle" property.
+```
+struct ContentView: View {
+  var body: some View {
+    NavigationView {
+      List {
+        ForEach(supports) { model in
+          NavigationButton(destination: TipDetailsView(title: model.title, image: model.icon)) {
+               SupportRow(title: model.title, icon: model.icon)
+          }
+        }
+      }
+      .navigationBarTitle(Text("Stay Healthy"))
+    }
+  }
+}
+```
+
+
+
+"Text" component is useful when you want to display any text in UI. You can easily customize font and color of text. It has some predefine font styles which are comonly used, or you can use your custom fonts.
+```
+struct SectionText : View {
+    var body: some View {
+      Text("Good Morning")
+        .font(.largeTitle)
+        .fontWeight(.bold)
+        .color(.gray)
+    }
+}
+```
+
+
+
+
+Next we will see image. Image has some great properties which simplifies your work. If you want circular clipping shape to the image, use ".clipShape(Circle())". You can also set custom path for custom shape of your image. 
+
+
+```
+struct MotivationRow : View {
+    var body: some View {
+      Image("nature")
+        .clipShape(Circle())
+        .overlay(Circle().stroke(Color.white, lineWidth: 4))
+        .shadow(radius: 4)
+        .padding(.all, 6)
+    }
+}
+```
+
+Other than assets, you can also use system icons in image. You have to specify name of system icon in image. There are more than 1500 system icons which you can use, and Apple has provided app to get names of all that icons. You can download it from [here](https://developer.apple.com/design/downloads/SF-Symbols.dmg).
+```
+Image(systemName: "house.fill")
+```
