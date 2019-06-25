@@ -3,7 +3,7 @@ Apple announced UI Framework at WWDC 2019. It's called **SwiftUI** and it feels 
 
 SwiftUI replaces Storyboards and AutoLayout. It is declarative, so everything is based on stack views. It is not just a wrapper for UIKit, it's new and built using Swift. If you have worked with Flutter, SwiftUI will look familiar to you. Just like Flutter, you can create components and reuse them to organise your views.
 
-Just to explore SwiftUI, I have created this sample app with some dummy data. I have uploaded source code here, incase you want to experiment with it. For this sample app you will required **Xcode 11**, and Mac OS **Catalina** (if you want real-time preview of your UI code).
+Just to explore SwiftUI, I have created this sample app with some dummy data. I have uploaded source code here, just incase if you want to experiment with it. For this sample app you will required **Xcode 11**, and Mac OS **Catalina** (if you want real-time preview of your UI code).
 
 ![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/1.png)
 
@@ -11,18 +11,17 @@ Just to explore SwiftUI, I have created this sample app with some dummy data. I 
 
 Here I am going to explain some functionalities of SwiftUI framework, with some basic controls.
 
-Let’s start!
--
-When you create a new project using XCode 11 and check the SwiftUI box, it comes with a "SceneDelegate" file. SceneDelegate is responsible for your views hierarchy, it's not part of AppDelegate any more. AppDelegate is purely for managing services like notifications, location, etc. This helps to reduce burden from AppDelegate class. 
+### Let’s start!
+When you create a new project using Xcode 11 and check the SwiftUI box, it comes with a "SceneDelegate" file. SceneDelegate is responsible for your views hierarchy, so your window it's not part of AppDelegate any more. AppDelegate is purely for managing services like notifications, location, etc. This helps to reduce burden from AppDelegate class. 
 
-In "ContentView" file, you will see two struct, the first struct is where you write your view code, the second struct is where you declare what you want to preview.
+If you open "ContentView" file, you will see two struct, the first struct is where you write your view code, the second struct is where you declare what you want to preview.
 
 ![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/2.png)
 
 
 
 
-Live preview is a great tool. You don't have to compile and run your project every-time to verify your UI. Your code changes will immediately reflect into preview. You can even change size of your preview. Use "Group" if you want multiple preview of your view with different data, or use "previewDevice" to specify device in which you want preview, you can have multiple devices also.
+Live preview is a great tool. You don't have to compile and run your project every-time to verify your UI. Your code changes will immediately reflect into preview. Use "Group" if you want multiple preview of your view with different data, or use "previewDevice" to specify device in which you want preview, you can have multiple devices also. You can even change size of your preview.
 
 ![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/3.png)
 
@@ -68,7 +67,7 @@ struct ContentView: View {
 
 
 
-"Text" component is useful when you want to display any text in UI. You can easily customize font and color of text. It has some predefine font styles which are comonly used, or you can use your custom fonts.
+"Text" component is useful when you want to display any text in UI. You can easily customise font and color of text. It has some predefine font styles which are commonly used, or you can use your custom fonts.
 ```
 struct SectionText : View {
     var body: some View {
@@ -83,7 +82,7 @@ struct SectionText : View {
 
 
 
-Next we will see image. Image has some great properties which simplifies your work. If you want circular clipping shape to the image, use ".clipShape(Circle())". You can also set custom path for custom shape of your image. 
+SwiftUI has also simplify use of image. Image component  has some great properties which simplifies your work. If you want circular clipping shape to the image, use ".clipShape(Circle())", you can also set custom path for custom shape of your image.
 
 
 ```
