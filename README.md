@@ -3,8 +3,13 @@ Apple announced UI Framework at WWDC 2019. It's called **SwiftUI** and it feels 
 
 SwiftUI replaces Storyboards and AutoLayout. It is declarative, so everything is based on stack views. It is not just a wrapper for UIKit, it's new and built using Swift. If you have worked with Flutter, SwiftUI will look familiar to you. Just like Flutter, you can create components and reuse them to organise your views.
 
-Here we are going to explore some functionalities of SwiftUI framework. For this tutorial you will required **Xcode 11**, and Mac OS **Catalina** (if you want real-time preview of your UI code).
+Just to explore SwiftUI, I have created this sample app with some dummy data. I have uploaded source code here, incase you want to experiment with it. For this sample app you will required **Xcode 11**, and Mac OS **Catalina** (if you want real-time preview of your UI code).
 
+![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/1.png)
+
+
+
+Here I am going to explain some functionalities of SwiftUI framework, with some basic controls.
 
 Let’s start!
 -
@@ -12,21 +17,21 @@ When you create a new project using XCode 11 and check the SwiftUI box, it comes
 
 In "ContentView" file, you will see two struct, the first struct is where you write your view code, the second struct is where you declare what you want to preview.
 
-![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/1.png)
+![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/2.png)
 
 
 
 
 Live preview is a great tool. You don't have to compile and run your project every-time to verify your UI. Your code changes will immediately reflect into preview. You can even change size of your preview. Use "Group" if you want multiple preview of your view with different data, or use "previewDevice" to specify device in which you want preview, you can have multiple devices also.
 
-![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/2.png)
+![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/3.png)
 
 
 
 
 You can edit view component from preview also. Just hold command key and click on control which you want to edit. It will open popup on that control. You can choose "Inspect..." to change property of control, or you can directly embed it into HStack, VStack or List.
 
-![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/3.png)
+![alt text](https://github.com/Rahul-Chandera/SwiftUI/blob/master/img/4.png)
 
 
 
@@ -97,3 +102,6 @@ Other than assets, you can also use system icons in image. You have to specify n
 ```
 Image(systemName: "house.fill")
 ```
+
+
+This is pretty basic examples of SwiftUI, but you can explore in details from official document of SwiftUI. You can find it [here](https://developer.apple.com/tutorials/swiftui/tutorials).
