@@ -1,5 +1,5 @@
 //
-//  TipDetailsView.swift
+//  DetailsView.swift
 //  Stay Healthy
 //
 //  Created by Rahul on 06/06/19.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct TipDetailsView : View {
+struct DetailsView : View {
   var title: String
   var image: String
   

@@ -14,7 +14,7 @@ struct GridView : View {
       HStack(alignment: .top, spacing: 4) {
         ForEach(motivations) { model in
           MotivationRow(model: model)
-          // NavigationButton(destination: TipDetailsView(tip: tipModel)) {
+          // NavigationButton(destination: DetailsView(tip: tipModel)) {
           //   TipsRow(model: tipModel)
           // }
         }
